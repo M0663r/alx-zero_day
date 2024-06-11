@@ -1,0 +1,151 @@
+root@04d009e31980:/# ls
+alx-pre_course  bin   dev  home  lib32  libx32  mnt  proc  run   srv  tmp  var
+alx-zero_day    boot  etc  lib   lib64  media   opt  root  sbin  sys  usr
+root@04d009e31980:/# cd alx-zero_day
+root@04d009e31980:/alx-zero_day# ls
+0x03-git  bash  README.md
+root@04d009e31980:/alx-zero_day# mkdir c
+root@04d009e31980:/alx-zero_day# mkdir js
+root@04d009e31980:/alx-zero_day# touch c/c_is_fun.c
+root@04d009e31980:/alx-zero_day# touch js/main.js
+root@04d009e31980:/alx-zero_day# touch js/index.js
+root@04d009e31980:/alx-zero_day# touch bash/alx
+root@04d009e31980:/alx-zero_day# vim bash/alx
+root@04d009e31980:/alx-zero_day# cat bash/alx
+#!/bin/bash
+echo "ALX"
+root@04d009e31980:/alx-zero_day# touch bash/school
+root@04d009e31980:/alx-zero_day# vim bash/school
+root@04d009e31980:/alx-zero_day# git add .
+root@04d009e31980:/alx-zero_day# git commit -m 'Starting to code today, so cool'
+[master 91f0bee] Starting to code today, so cool
+ 5 files changed, 4 insertions(+)
+ create mode 100644 bash/alx
+ create mode 100644 bash/school
+ create mode 100644 c/c_is_fun.c
+ create mode 100644 js/index.js
+ create mode 100644 js/main.js
+root@04d009e31980:/alx-zero_day# git push
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (8/8), 628 bytes | 628.00 KiB/s, done.
+Total 8 (delta 0), reused 0 (delta 0)
+To https://github.com/M0663r/alx-zero_day.git
+   de46767..91f0bee  master -> master
+root@04d009e31980:/alx-zero_day# ls
+0x03-git  bash  c  js  README.md
+root@04d009e31980:/alx-zero_day# ls bash
+alx  school
+root@04d009e31980:/alx-zero_day# ls c
+c_is_fun.c
+root@04d009e31980:/alx-zero_day# ls js
+index.js  main.js
+root@04d009e31980:/alx-zero_day# git 
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone             Clone a repository into a new directory
+   init              Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add               Add file contents to the index
+   mv                Move or rename a file, a directory, or a symlink
+   restore           Restore working tree files
+   rm                Remove files from the working tree and from the index
+   sparse-checkout   Initialize and modify the sparse-checkout
+
+examine the history and state (see also: git help revisions)
+   bisect            Use binary search to find the commit that introduced a bug
+   diff              Show changes between commits, commit and working tree, etc
+   grep              Print lines matching a pattern
+   log               Show commit logs
+   show              Show various types of objects
+   status            Show the working tree status
+
+grow, mark and tweak your common history
+   branch            List, create, or delete branches
+   commit            Record changes to the repository
+   merge             Join two or more development histories together
+   rebase            Reapply commits on top of another base tip
+   reset             Reset current HEAD to the specified state
+   switch            Switch branches
+   tag               Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch             Download objects and refs from another repository
+   pull              Fetch from and integrate with another repository or a local branch
+   push              Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.
+root@04d009e31980:/alx-zero_day# git branch update_script
+root@04d009e31980:/alx-zero_day# git switch update_script
+Switched to branch 'update_script'
+root@04d009e31980:/alx-zero_day# touch bash/98
+root@04d009e31980:/alx-zero_day# vim bash/alx
+root@04d009e31980:/alx-zero_day# vim bash/school
+root@04d009e31980:/alx-zero_day# git add .
+root@04d009e31980:/alx-zero_day# git commit -m 'My personal work'
+[update_script 8bcb525] My personal work
+ 3 files changed, 2 insertions(+), 2 deletions(-)
+ create mode 100644 bash/98
+root@04d009e31980:/alx-zero_day# git push
+fatal: The current branch update_script has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin update_script
+
+root@04d009e31980:/alx-zero_day# git push --set-upstream origin update_script
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (5/5), 444 bytes | 444.00 KiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'update_script' on GitHub by visiting:
+remote:      https://github.com/M0663r/alx-zero_day/pull/new/update_script
+remote: 
+To https://github.com/M0663r/alx-zero_day.git
+ * [new branch]      update_script -> update_script
+Branch 'update_script' set up to track remote branch 'update_script' from 'origin'.
+root@04d009e31980:/alx-zero_day# git switch main
+fatal: invalid reference: main
+root@04d009e31980:/alx-zero_day# vim bash/alx
+root@04d009e31980:/alx-zero_day# ls bash
+98  alx  school
+root@04d009e31980:/alx-zero_day# git switch master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+root@04d009e31980:/alx-zero_day# ls bash
+alx  school
+root@04d009e31980:/alx-zero_day# vim bash/alx
+root@04d009e31980:/alx-zero_day# rm -r js
+root@04d009e31980:/alx-zero_day# git add .
+root@04d009e31980:/alx-zero_day# git commit -m 'Hot fix'
+[master e5d0f7f] Hot fix
+ 3 files changed, 1 insertion(+), 1 deletion(-)
+ delete mode 100644 js/index.js
+ delete mode 100644 js/main.js
+root@04d009e31980:/alx-zero_day# git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 451 bytes | 451.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/M0663r/alx-zero_day.git
+   91f0bee..e5d0f7f  master -> master
+root@04d009e31980:/alx-zero_day# touch up_to_date
+root@04d009e31980:/alx-zero_day# vim up_to_date
