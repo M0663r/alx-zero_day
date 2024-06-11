@@ -1,3 +1,4 @@
+root@04d009e31980:/# git pull https://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@github.com/M0663r/alx-zero_day.git
 root@04d009e31980:/# ls
 alx-pre_course  bin   dev  home  lib32  libx32  mnt  proc  run   srv  tmp  var
 alx-zero_day    boot  etc  lib   lib64  media   opt  root  sbin  sys  usr
